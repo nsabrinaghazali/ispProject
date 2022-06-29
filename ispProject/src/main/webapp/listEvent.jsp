@@ -75,6 +75,7 @@ a {
 			</tr>
 		</c:forEach>
 	</table>
+	<p>Changes made</p>
 	<script>
 	function confirmation(id)
 	{
