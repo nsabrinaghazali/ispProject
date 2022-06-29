@@ -67,7 +67,7 @@ a {
 				<td>25</td>
 				<td><button class="btn btn-primary" >View</button></td>
 				<td><button class="btn btn-primary" >Edit</button></td>
-				<td><button class="btn btn-danger" onclick="confirmation(id)>Delete</button></td>
+				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
 			</tr>
 			<tr>
 				<td> 102 </td>
@@ -76,7 +76,7 @@ a {
 				<td> 50 </td>
 				<td><button class="btn btn-primary" >View</button></td>
 				<td><button class="btn btn-primary" >Edit</button></td>
-				<td><button class="btn btn-danger">Delete</button></td>
+				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
 			</tr>
 			<tr>
 				<td> 103 </td>
@@ -85,7 +85,7 @@ a {
 				<td>32</td>
 				<td><button class="btn btn-primary" >View</button></td>
 				<td><button class="btn btn-primary" >Edit</button></td>
-				<td><button class="btn btn-danger">Delete</button></td>
+				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
 			</tr>
 	</table>
 	<script>
