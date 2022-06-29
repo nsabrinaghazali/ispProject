@@ -34,7 +34,7 @@ input[type=text], input[type=number], select {
 	box-sizing: border-box;
 }
 
-button {
+input[type=submit],input[type=reset] {
 	width: 15%;
 	background-color: #CED6E0;;
 	padding: 14px 20px;
