@@ -65,7 +65,7 @@ a {
 				<td>COLOURING CONTEST</td>
 				<td>COMPETITION</td>
 				<td>25</td>
-				<td><button class="btn btn-primary" >View</button></td>
+				<td><a href="viewEvent.jsp"><button class="btn btn-primary" >View</button></a></td>
 				<td><a href="updateEvent.jsp"><button class="btn btn-primary" >Edit</button></a></td>
 				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
 			</tr>
