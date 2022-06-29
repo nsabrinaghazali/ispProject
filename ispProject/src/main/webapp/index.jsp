@@ -1,60 +1,51 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<style type="text/css">
-body
-{
-	margin:auto;
+<title>MyMasjid: Event Management System</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+	text-align: center;
+	background-color: #C7BBBC;
+	color: #555555;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+}
+
+button {
+	background-color: #CED6E0;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	color: #555555;
+}
+
+a {
+	text-decoration: none;
 }
 </style>
 </head>
 <body>
-	<h1>MyMasjid: Event Management System</h1>
-	<form method="post">
-		<h2>--MOSQUE MANAGEMENT--</h2>
-		 <h3>View Event</h3><br>
-		 	 Choose Event:
-		 	 <select name="selEvent">
-		 	 	<option>Ramadhan Orphanage Community Service</option>
-		 	 	<option>Aidilfitri Colouring Competition</option>
-		 	 	<option>A drop of Iman talk with Ustaz Zayn</option>
-		 	 </select>
-		 	 <button type="button">View Event</button>
-		 	 
-		 <h3>Add Event</h3><br>
-			 Event Name:<br>
-			 <input type="text" name="eventName"><br>
-			 Event Date:<br>
-			 <input type="text" name="eventDate"><br>
-			 Event Time:<br>
-			 <input type="text" name="eventName"><br>
-			 Other details:<br>
-			 <input type="file"><br><br>
-			 <button type="button">Add Event</button>
-			 
-		 <h3>Update Event</h3><br>
-		 	 Select Event:
-		 	 <select name="selEvent">
-		 	 	<option>Ramadhan Orphanage Community Service</option>
-		 	 	<option>Aidilfitri Colouring Competition</option>
-		 	 	<option>A drop of Iman talk with Ustaz Zayn</option>
-		 	 </select>
-		 	 <button type="button">Update Event</button>
-		 	 
-		 <h3>Delete Event Event</h3><br>
-		 	 Choose Event:
-		 	 <select name="selEvent">
-		 	 	<option>Ramadhan Orphanage Community Service</option>
-		 	 	<option>Aidilfitri Colouring Competition</option>
-		 	 	<option>A drop of Iman talk with Ustaz Zayn</option>
-		 	 </select>
-		 	 <button type="button">Delete Event</button>
-		 	 
-	</form>
-
+	<h2>WELCOME TO</h2>
+	<h1>MyMasjid: EVENT MANAGEMENTSYSTEM</h1>
+	<hr>
+	<a href="listEvent.jsp">
+		<button>View Events</button>
+	</a>&nbsp;
+	<a href="addEvent.jsp">
+		<button>Add Event</button>
+	</a>
 </body>
 </html>
