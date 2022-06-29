@@ -73,6 +73,7 @@ a {
 						id="<c:out value="${param.id}"/>" onclick="confirmation(this.id)">Delete</button></td>
 			</tr>
 	</table>
+	<p>Changes made</p>
 	<script>
 	function confirmation(id)
 	{
