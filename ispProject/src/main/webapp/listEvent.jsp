@@ -66,7 +66,7 @@ a {
 				<td>COMPETITION</td>
 				<td>25</td>
 				<td><button class="btn btn-primary" >View</button></td>
-				<td><button class="btn btn-primary" onclick="updateEvent.jsp">Edit</button></td>
+				<td><button class="btn btn-primary" href="updateEvent.jsp">Edit</button></td>
 				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
 			</tr>
 			<tr>
@@ -75,7 +75,7 @@ a {
 				<td> COMMUNITY SERVICE </td>
 				<td> 50 </td>
 				<td><button class="btn btn-primary" >View</button></td>
-				<td><button class="btn btn-primary" onclick="updateEvent.jsp">Edit</button></td>
+				<td><button class="btn btn-primary" href="updateEvent.jsp">Edit</button></td>
 				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
 			</tr>
 			<tr>
@@ -84,7 +84,7 @@ a {
 				<td>LECTURE</td>
 				<td>32</td>
 				<td><button class="btn btn-primary" >View</button></td>
-				<td><button class="btn btn-primary" onclick="updateEvent.jsp">Edit</button></td>
+				<td><button class="btn btn-primary" href="updateEvent.jsp">Edit</button></td>
 				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
 			</tr>
 	</table>
