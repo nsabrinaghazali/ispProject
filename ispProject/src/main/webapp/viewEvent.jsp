@@ -42,8 +42,8 @@ button {
 	<h1>EVENT MANAGEMENT SYSTEM</h1>
 	<h2>Event Details</h2>
 	<hr>
-	<a href="ListEventController">
-		<button>Back</button>
+	<a href="listEvent.jsp">
+		<button>View All Event</button>
 	</a>
 	<br>
 	<br>
