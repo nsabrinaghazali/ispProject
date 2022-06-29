@@ -62,16 +62,13 @@ a {
 		</tr>
 		<c:forEach items="${events}" var="e" varStatus="events">
 			<tr>
-				<td><c:out value="" /></td>
-				<td><c:out value="${param.name}" /></td>
-				<td><c:out value="${param.type}" /></td>
-				<td><c:out value="${param.participant}" /></td>
-				<td><a class="btn btn-primary"
-					href="ViewEventController?id=<c:out value="${param.id}"/>">View</a></td>
-				<td><a class="btn btn-primary"
-					href="UpdateEventController?id=<c:out value="${param.id}"/>">Edit</a></td>
-				<td><button class="btn btn-danger"
-						id="<c:out value="${param.id}"/>" onclick="confirmation(this.id)">Delete</button></td>
+				<td> 123 </td>
+				<td>COLOURING CONTEST</td>
+				<td>COMPETITION</td>
+				<td>25</td>
+				<td><a class="btn btn-primary" >View</a></td>
+				<td><a class="btn btn-primary" >Edit</a></td>
+				<td><button class="btn btn-danger">Delete</button></td>
 			</tr>
 		</c:forEach>
 	</table>
