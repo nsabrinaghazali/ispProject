@@ -48,14 +48,13 @@ button {
 	<br>
 	<br>
 	<div>
-		ID:
-		<c:out value="${e.id}" />
-		<br> <br> EVENT NAME:
-		<c:out value="${e.name}" />
-		<br> <br> EVENT TYPE:
-		<c:out value="${e.type}" />
-		<br> <br> NO OF PARTICIPANT:
-		<c:out value="${e.participant}" />
+		ID: <c:out value="${param.id}" />
+		<br> <br> 
+		EVENT NAME:<c:out value="${param.name}" />
+		<br> <br> 
+		EVENT TYPE: <c:out value="${param.type}" />
+		<br> <br> 
+		NO OF PARTICIPANT: <c:out value="${param.participant}" />
 		<br> <br>
 	</div>
 

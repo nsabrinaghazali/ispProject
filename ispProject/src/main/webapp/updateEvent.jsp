@@ -62,7 +62,7 @@ button {
 		</select><br> <br> <label for="participant">NUMBER OF
 			PARTICIPANT</label><br> <input type="number" name="participant" required><br>
 		<br> <input type="hidden" name="id"
-			value="<c:out value="${e.id}"/>" /><br> <input type="submit"
+			value="<c:out value="${param.id}"/>" /><br> <input type="submit"
 			value="Submit">&nbsp; <input type="reset" value="Reset">
 
 	</form>

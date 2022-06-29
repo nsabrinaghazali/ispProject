@@ -38,13 +38,11 @@ a {
 </style>
 </head>
 <body>
-<<<<<<< HEAD
+
 	<h2>WELCOME TO MASJID JASIN</h2>
 	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
-=======
 	<h2>WELCOME TO MASJID UITM</h2>
 	<h1>MyMasjid: EVENT MANAGEMENTSYSTEM</h1>
->>>>>>> branch 'master' of https://github.com/AfiqIzzan/ispProject.git
 	<hr>
 	<a href="listEvent.jsp">
 		<button>View Events</button>

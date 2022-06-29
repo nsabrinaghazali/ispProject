@@ -62,16 +62,16 @@ a {
 		</tr>
 		<c:forEach items="${events}" var="e" varStatus="events">
 			<tr>
-				<td><c:out value="${e.id}" /></td>
-				<td><c:out value="${e.name}" /></td>
-				<td><c:out value="${e.type}" /></td>
-				<td><c:out value="${e.participant}" /></td>
+				<td><c:out value="" /></td>
+				<td><c:out value="${param.name}" /></td>
+				<td><c:out value="${param.type}" /></td>
+				<td><c:out value="${param.participant}" /></td>
 				<td><a class="btn btn-primary"
-					href="ViewEventController?id=<c:out value="${e.id}"/>">View</a></td>
+					href="ViewEventController?id=<c:out value="${param.id}"/>">View</a></td>
 				<td><a class="btn btn-primary"
-					href="UpdateEventController?id=<c:out value="${e.id}"/>">Edit</a></td>
+					href="UpdateEventController?id=<c:out value="${param.id}"/>">Edit</a></td>
 				<td><button class="btn btn-danger"
-						id="<c:out value="${e.id}"/>" onclick="confirmation(this.id)">Delete</button></td>
+						id="<c:out value="${param.id}"/>" onclick="confirmation(this.id)">Delete</button></td>
 			</tr>
 		</c:forEach>
 	</table>
