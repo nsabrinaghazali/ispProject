@@ -50,7 +50,7 @@ button {
 	<hr>
 	<a href="listEvent.jsp"><button>View Events</button></a>
 	<form action="viewEvent.jsp" method="post">
-	<label for="participant">NUMBER OF PARTICIPANT</label><br> <input type="number" name="participant" required><br>
+	<label for="participant">EVENT ID</label><br> <input type="number" name="id" required><br>
 		<br>
 		<label for="name">EVENT NAME</label><br> <input type="text"
 			id="name" name="name" placeholder="Event Name" required><br>

@@ -50,8 +50,7 @@ button {
 	<h1>EVENT MANAGEMENT SYSTEM</h1>
 	<h2>Edit Event</h2>
 	<hr>
-	<a href="ListEventController"><button>View Events</button></a>
-	<form action="AddEventController" method="post">
+	<form action="listEvent.jsp" method="post">
 		<label for="name">EVENT NAME</label><br> <input type="text"
 			id="name" name="name" placeholder="Event Name" required><br>
 		<br> <label for="type">EVENT TYPE</label><br> <select
