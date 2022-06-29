@@ -49,7 +49,7 @@ button {
 	<h2>Add Event</h2>
 	<hr>
 	<a href="listEvent.jsp"><button>View Events</button></a>
-	<form action="viewEvent.jsp" method="post" action="listEvent.jsp">
+	<form  method="post" action="listEvent.jsp">
 	<label for="participant">EVENT ID</label><br> <input type="number" name="id" required><br>
 		<br>
 		<label for="name">EVENT NAME</label><br> <input type="text"
