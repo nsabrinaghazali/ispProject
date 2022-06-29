@@ -60,7 +60,6 @@ a {
 			<th>NO OF PARTICIPANT</th>
 			<th colspan="3">ACTION</th>
 		</tr>
-		<c:forEach items="${events}" var="e" varStatus="events">
 			<tr>
 				<td> 123 </td>
 				<td>COLOURING CONTEST</td>
@@ -70,7 +69,6 @@ a {
 				<td><a class="btn btn-primary" >Edit</a></td>
 				<td><button class="btn btn-danger">Delete</button></td>
 			</tr>
-		</c:forEach>
 	</table>
 	<script>
 	function confirmation(id)
