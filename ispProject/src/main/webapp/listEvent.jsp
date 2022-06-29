@@ -61,12 +61,30 @@ a {
 			<th colspan="3">ACTION</th>
 		</tr>
 			<tr>
-				<td> 123 </td>
+				<td> 101 </td>
 				<td>COLOURING CONTEST</td>
 				<td>COMPETITION</td>
 				<td>25</td>
-				<td><a class="btn btn-primary" >View</a></td>
-				<td><a class="btn btn-primary" >Edit</a></td>
+				<td><button class="btn btn-primary" >View</button></td>
+				<td><button class="btn btn-primary" >Edit</button></td>
+				<td><button class="btn btn-danger">Delete</button></td>
+			</tr>
+			<tr>
+				<td> 102 </td>
+				<td> GOTONG ROYONG PERDANA </td>
+				<td> COMMUNITY SERVICE </td>
+				<td> 50 </td>
+				<td><button class="btn btn-primary" >View</button></td>
+				<td><button class="btn btn-primary" >Edit</button></td>
+				<td><button class="btn btn-danger">Delete</button></td>
+			</tr>
+			<tr>
+				<td> 103 </td>
+				<td>HOW TO ATTAIN PEACEFUL MIND</td>
+				<td>LECTURE</td>
+				<td>32</td>
+				<td><button class="btn btn-primary" >View</button></td>
+				<td><button class="btn btn-primary" >Edit</button></td>
 				<td><button class="btn btn-danger">Delete</button></td>
 			</tr>
 	</table>
