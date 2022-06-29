@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Inquiries List</title>
+<title>Event List</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 body {
@@ -95,7 +95,7 @@ a {
 		var r = confirm("Are you sure you want to delete?");
 		if(r == true)
 			{
-			location.href = 'DeleteEventController?id=' + id;
+			location.href = 'listEvent2.jsp' + id;
 			alert("Event successfuly deleted");
 			}
 		else
