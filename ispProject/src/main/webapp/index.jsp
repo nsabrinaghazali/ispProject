@@ -38,7 +38,7 @@ a {
 </style>
 </head>
 <body>
-	<h2>WELCOME TO MASJID MELAKA</h2>
+	<h2>WELCOME TO MASJID </h2>
 	<h1>MyMasjid: EVENT MANAGEMENTSYSTEM</h1>
 	<hr>
 	<a href="listEvent.jsp">
