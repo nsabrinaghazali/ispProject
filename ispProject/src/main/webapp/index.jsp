@@ -37,7 +37,7 @@ body
 			 <button type="button">Add Event</button>
 			 
 		 <h3>Update Event</h3><br>
-		 	 Choose Event:
+		 	 Select Event:
 		 	 <select name="selEvent">
 		 	 	<option>Ramadhan Orphanage Community Service</option>
 		 	 	<option>Aidilfitri Colouring Competition</option>
