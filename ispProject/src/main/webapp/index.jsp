@@ -39,8 +39,8 @@ a {
 </head>
 <body>
 
-	<h2>WELCOME TO MASJID UiTM JASIN MELAKA MALAYSIA</h2>
-	<h1>MyMasjid: EVENTS MANAGEMENT SYSTEM</h1>
+	<h2>WELCOME TO MASJID UiTM JASIN MELAKA</h2>
+	<h1>MyMasjid: EVENTS MANAGEMENT SYSTEM </h1>
 
 	<hr>
 	<a href="listEvent.jsp">
