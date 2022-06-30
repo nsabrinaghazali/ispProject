@@ -41,6 +41,7 @@ a {
 
 	<h2>WELCOME TO MASJID UiTM JASIN MELAKA</h2>
 	<h1>MyMasjid: EVENTS MANAGEMENT SYSTEM </h1>
+	<h2>YEAGERIST</h2>
 
 	<hr>
 	<a href="listEvent.jsp">
