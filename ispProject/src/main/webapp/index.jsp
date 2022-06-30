@@ -39,7 +39,7 @@ a {
 </head>
 <body>
 
-	<h2>WELCOME TO MASJID JASIN</h2>
+	<h2>WELCOME TO MASJID UiTM JASIN</h2>
 	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
 
 	<hr>
