@@ -48,17 +48,17 @@ button {
 	<h1>EVENT MANAGEMENT SYSTEM</h1>
 	<h2>Add Event</h2>
 	<hr>
-	<a href="ListEventController"><button>View Events</button></a>
-	<form action="AddEventController" method="post">
+	<a href="listEvent.jsp"><button>View Events</button></a>
+	<form  method="post" action="viewEvent.jsp">
+	<label for="participant">EVENT ID</label><br> <input type="number" name="id" required><br>
+		<br>
 		<label for="name">EVENT NAME</label><br> <input type="text"
 			id="name" name="name" placeholder="Event Name" required><br>
-		<br> <label for="type">EVENT TYPE</label><br> <select
-			name="type" required>
+		<br> <label for="type">EVENT TYPE</label><br> <select name="type" required>
 			<option value="Lecture">Lecture</option>
 			<option value="Competition">Competition</option>
 			<option value="Community Service">Community Service</option>
-		</select><br> <br> <label for="participant">NUMBER OF
-			PARTICIPANT</label><br> <input type="number" name="participant" required><br>
+		</select><br> <br> <label for="participant">NUMBER OF PARTICIPANT</label><br> <input type="number" name="participant" required><br>
 		<br>
 
 		<button type="submit">Submit</button>

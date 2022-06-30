@@ -38,8 +38,10 @@ a {
 </style>
 </head>
 <body>
-	<h2>WELCOME TO MASJID UITM </h2>
-	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM YEAGERIST </h1>
+
+	<h2>WELCOME TO MASJID UiTM JASIN MELAKA</h2>
+	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
+
 	<hr>
 	<a href="listEvent.jsp">
 		<button>View Events</button>
