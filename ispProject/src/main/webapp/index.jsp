@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>MyMasjid: Event Management System</title>
+<title>MyMasjid: Event Management System UiTM Melaka</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 body {
