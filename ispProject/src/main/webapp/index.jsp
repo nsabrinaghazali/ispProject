@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>MyMasjid: Event Management System</title>
+<title>MyMasjid: Event Management System UiTM Melaka</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 body {
@@ -39,9 +39,10 @@ a {
 </head>
 <body>
 
-	<h2>WELCOME TO MASJID UiTM JASIN</h2>
-	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
 
+	<h2>WELCOME TO MASJID UiTM JASIN MELAKA </h2>
+	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
+	<h2>TEAM YEAGERIST</h2>
 
 	<hr>
 	<a href="listEvent.jsp">
