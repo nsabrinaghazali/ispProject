@@ -48,13 +48,13 @@ button {
 	<br>
 	<br>
 	<div>
-		ID: <c:out value="${param.id}" />
+		ID: 101
 		<br> <br> 
-		EVENT NAME:<c:out value="${param.name}" />
+		EVENT NAME: COLOURING CONTEST
 		<br> <br> 
-		EVENT TYPE: <c:out value="${param.type}" />
+		EVENT TYPE: COMPETITION
 		<br> <br> 
-		NO OF PARTICIPANT: <c:out value="${param.participant}" />
+		NO OF PARTICIPANT: 25
 		<br> <br>
 	</div>
 
