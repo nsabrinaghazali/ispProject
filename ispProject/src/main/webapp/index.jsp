@@ -57,25 +57,40 @@ a {
 	<p id="demo"></p>
 
 <script>
-	window.onload = function()
-	{
-		var xhr = new XMLHttpRequest();
-		text = xhr.open('GET', 'https://microsrvs.herokuapp.com/listevent', true);
-		const obj = JSON.parse(text);
-		var table = document.createElement('table');
-		for(var i=0; i<obj.length; i++)
-		{
+window.onload = function(){
+	var request = new XMLHttpRequest();
+	request.open('GET', 'https://microsrvs.herokuapp.com/listevent', true);
+	request.onload = function(){
+		var obj = JSON.parse(this.response);
+		var table = document.createElement("table");
+		for(var i=0; i<obj.length; i++){
 			var row = table.insertRow(i);
+			if(i === 0){
+				row.style.fontWeight = 'bold';
+				var cell1 = row.insertCell(0).innerHTML = 'Id';
+				var cell2 = row.insertCell(1).innerHTML = 'Name';
+				var cell3 = row.insertCell(2).innerHTML = 'Date';
+				var cell4 = row.insertCell(3).innerHTML = 'Time';
+				var cell5 = row.insertCell(4).innerHTML = 'No';
+				}
+			else{
 				var cell1 = row.insertCell(0);
 				var cell2 = row.insertCell(1);
 				var cell3 = row.insertCell(2);
 				var cell4 = row.insertCell(3);
 				var cell5 = row.insertCell(4);
-				var cell6 = row.insertCell(5);
-				var cell7 = row.insertCell(6);
-		}
+
 				
-		document.getElementById('demo').appendChild(table);
+				cell1.inheritHTML = obj[i].event_id;
+				cell2.inheritHTML = obj[i].event_name;
+				cell3.inheritHTML = obj[i].event_date;
+				cell4.inheritHTML = obj[i].event_time;
+				cell5.inheritHTML = obj[i].no_of_participants;
+				}
+			}
+			document.getElementById('demo').appendChild(table);
+		};
+		request.send();
 	}
 </script>
 	
