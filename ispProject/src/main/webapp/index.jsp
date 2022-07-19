@@ -63,32 +63,33 @@ window.onload = function(){
 	request.onload = function(){
 		var obj = JSON.parse(this.response);
 		var table = document.createElement("table");
-		for(var i=0; i<obj.length; i++){
+		
+		var row = table.insertRow();
+		row.style.fontWeight = 'bold';
+		var cell1 = row.insertCell(0).innerHTML = 'Id';
+		var cell2 = row.insertCell(1).innerHTML = 'Name';
+		var cell3 = row.insertCell(2).innerHTML = 'Date';
+		var cell4 = row.insertCell(3).innerHTML = 'Time';
+		var cell5 = row.insertCell(4).innerHTML = 'No';
+		
+		for(var i=0; i<obj.length; i++)
+		{
 			var row = table.insertRow(i);
-			if(i === 0){
-				row.style.fontWeight = 'bold';
-				var cell1 = row.insertCell(0).innerHTML = 'Id';
-				var cell2 = row.insertCell(1).innerHTML = 'Name';
-				var cell3 = row.insertCell(2).innerHTML = 'Date';
-				var cell4 = row.insertCell(3).innerHTML = 'Time';
-				var cell5 = row.insertCell(4).innerHTML = 'No';
-				}
-			else{
-				var cell1 = row.insertCell(0);
-				var cell2 = row.insertCell(1);
-				var cell3 = row.insertCell(2);
-				var cell4 = row.insertCell(3);
-				var cell5 = row.insertCell(4);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			var cell4 = row.insertCell(3);
+			var cell5 = row.insertCell(4);
 
 				
-				cell1.innerHTML = obj[i].event_id;
-				cell2.innerHTML = obj[i].event_name;
-				cell3.innerHTML = obj[i].event_date;
-				cell4.innerHTML = obj[i].event_time;
-				cell5.innerHTML = obj[i].no_of_participants;
-				}
-			}
-			document.getElementById('demo').appendChild(table);
+			cell1.innerHTML = obj[i].event_id;
+			cell2.innerHTML = obj[i].event_name;
+			cell3.innerHTML = obj[i].event_date;
+			cell4.innerHTML = obj[i].event_time;
+			cell5.innerHTML = obj[i].no_of_participants;
+				
+		}
+		document.getElementById('demo').appendChild(table);
 		};
 		request.send();
 	}
