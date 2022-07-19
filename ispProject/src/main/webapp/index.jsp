@@ -81,11 +81,11 @@ window.onload = function(){
 				var cell5 = row.insertCell(4);
 
 				
-				cell1.inheritHTML = obj[i].event_id;
-				cell2.inheritHTML = obj[i].event_name;
-				cell3.inheritHTML = obj[i].event_date;
-				cell4.inheritHTML = obj[i].event_time;
-				cell5.inheritHTML = obj[i].no_of_participants;
+				cell1.innerHTML = obj[i].event_id;
+				cell2.innerHTML = obj[i].event_name;
+				cell3.innerHTML = obj[i].event_date;
+				cell4.innerHTML = obj[i].event_time;
+				cell5.innerHTML = obj[i].no_of_participants;
 				}
 			}
 			document.getElementById('demo').appendChild(table);
