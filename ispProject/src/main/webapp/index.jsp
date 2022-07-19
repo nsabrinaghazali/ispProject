@@ -53,17 +53,6 @@ a {
 		<button>Add Event</button>
 	</a>
 	<br><br>
-	<script>
-		var table = document.createElement("table");
-		
-		var row = table.insertRow();
-		row.style.fontWeight = 'bold';
-		var cell1 = row.insertCell(0).innerHTML = 'Id';
-		var cell2 = row.insertCell(1).innerHTML = 'Name';
-		var cell3 = row.insertCell(2).innerHTML = 'Date';
-		var cell4 = row.insertCell(3).innerHTML = 'Time';
-		var cell5 = row.insertCell(4).innerHTML = 'No';
-	</script>
 	<p id="demo"></p>
 
 <script>
@@ -74,6 +63,7 @@ a {
 		request.onload = function()
 		{
 			var obj = JSON.parse(this.response);
+			var table = document.createElement("table");
 			for(var i=0; i<obj.length; i++)
 			{
 				var row = table.insertRow(i);
