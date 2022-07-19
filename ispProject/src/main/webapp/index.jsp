@@ -36,6 +36,23 @@ a {
 	text-decoration: none;
 }
 </style>
+	
+</head>
+<body>
+
+
+	<h2>WELCOME TO MASJID UiTM JASIN MELAKA </h2>
+	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
+	<h2>TEAM YEAGERIST</h2>
+
+	<hr>
+	<a href="listEvent.jsp">
+		<button>View Events</button>
+	</a>&nbsp;
+	<a href="addEvent.jsp">
+		<button>Add Event</button>
+	</a>
+	<br><br>
 	<script>
 	window.onload = function(){
 	var request = new XMLHttpRequest();
@@ -70,23 +87,6 @@ a {
 		request.send();
 	}
 </script>
-</head>
-<body>
-
-
-	<h2>WELCOME TO MASJID UiTM JASIN MELAKA </h2>
-	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
-	<h2>TEAM YEAGERIST</h2>
-
-	<hr>
-	<a href="listEvent.jsp">
-		<button>View Events</button>
-	</a>&nbsp;
-	<a href="addEvent.jsp">
-		<button>Add Event</button>
-	</a>
-	<br><br>
-	
 	<div id ='table_id'></div>
 </body>
 </html>
