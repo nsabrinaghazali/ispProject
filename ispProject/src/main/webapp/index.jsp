@@ -36,23 +36,6 @@ a {
 	text-decoration: none;
 }
 </style>
-	
-</head>
-<body>
-
-
-	<h2>WELCOME TO MASJID UiTM JASIN MELAKA </h2>
-	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
-	<h2>TEAM YEAGERIST</h2>
-
-	<hr>
-	<a href="listEvent.jsp">
-		<button>View Events</button>
-	</a>&nbsp;
-	<a href="addEvent.jsp">
-		<button>Add Event</button>
-	</a>
-	<br><br>
 	<script>
 	window.onload = function(){
 	var request = new XMLHttpRequest();
@@ -60,9 +43,9 @@ a {
 	request.onload = function(){
 		var car_obj = JSON.parse(this.response);
 		var table = document.create Element('table');
-		for(var I = 0; I < car_obj.length; i++){
+		for(var i = 0; i < car_obj.length; i++){
 			var row = table.insertRow(i);
-			if(I === 0){
+			if(i === 0){
 				row.style.fontWeight = 'bold';
 				var cell1 = row.insertCell(0).innerHTML = 'IC';
 				var cell2 = row.insertCell(1).innerHTML = 'IC';
@@ -87,6 +70,23 @@ a {
 		request.send();
 	}
 </script>
+</head>
+<body>
+
+
+	<h2>WELCOME TO MASJID UiTM JASIN MELAKA </h2>
+	<h1>MyMasjid: EVENT MANAGEMENT SYSTEM</h1>
+	<h2>TEAM YEAGERIST</h2>
+
+	<hr>
+	<a href="listEvent.jsp">
+		<button>View Events</button>
+	</a>&nbsp;
+	<a href="addEvent.jsp">
+		<button>Add Event</button>
+	</a>
+	<br><br>
+	
 	<div id ='table_id'></div>
 </body>
 </html>
