@@ -64,23 +64,19 @@ a {
 		{
 			var obj = JSON.parse(this.response);
 			var table = document.createElement("table");
-		
-			
-			
-			
+
 			for(var i=0; i<obj.length; i++)
 			{
 				var row = table.insertRow(i);
-				if(i===0)
+				if(i === 0)
 				{
 					row.style.fontWeight = 'bold';
-					var cell1 = row.insertCell(0).innerHTML = 'Event Id';
-					var cell2 = row.insertCell(1).innerHTML = 'Event Name';
-					var cell3 = row.insertCell(2).innerHTML = 'Event Date';
-					var cell4 = row.insertCell(3).innerHTML = 'Event Time';
-					var cell5 = row.insertCell(4).innerHTML = 'Maximum Number of Participants';
+					var cel1 = row.insertCell(0).innerHTML = 'Event Id';
+					var cel2 = row.insertCell(1).innerHTML = 'Event Name';
+					var cel3 = row.insertCell(2).innerHTML = 'Event Date';
+					var cel4 = row.insertCell(3).innerHTML = 'Event Time';
+					var cel5 = row.insertCell(4).innerHTML = 'Maximum Number of Participants';
 				}
-				var row = table.insertRow(i);
 				var cell1 = row.insertCell(0);
 				var cell2 = row.insertCell(1);
 				var cell3 = row.insertCell(2);
