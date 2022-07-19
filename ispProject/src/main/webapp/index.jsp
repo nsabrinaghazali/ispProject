@@ -60,31 +60,7 @@ a {
 			xhr.open('GET', 'https://microsrvs.herokuapp.com/listevent', true);
 			xhr.onload = function()
 			{
-				var car_obj = JSON.parse(this.response);
-				var table = document.create Element('table');
-				for(var i = 0; i < car_obj.length; i++){
-					var row = table.insertRow(i);
-					if(i === 0){
-						row.style.fontWeight = 'bold';
-						var cell1 = row.insertCell(0).innerHTML = 'IC';
-						var cell2 = row.insertCell(1).innerHTML = 'IC';
-						var cell3 = row.insertCell(2).innerHTML = 'IC';
-						var cell4 = row.insertCell(3).innerHTML = 'IC';
-						var cell5 = row.insertCell(4).innerHTML = 'IC';
-						var cell6 = row.insertCell(5).innerHTML = 'IC';
-						var cell7 = row.insertCell(6).innerHTML = 'IC';
-						}
-					else{
-						var cell1 = row.insertCell(0);
-						var cell2 = row.insertCell(1);
-						var cell3 = row.insertCell(2);
-						var cell4 = row.insertCell(3);
-						var cell5 = row.insertCell(4);
-						var cell6 = row.insertCell(5);
-						var cell7 = row.insertCell(6);
-						}
-					}
-					document.getElementById('table_id').appendChild(table);
+				console.log(xhr.responseURL);
 			};
 			request.send();
 		}
