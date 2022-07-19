@@ -53,6 +53,17 @@ a {
 		<button>Add Event</button>
 	</a>
 	<br><br>
+	<script>
+		var table = document.createElement("table");
+		
+		var row = table.insertRow();
+		row.style.fontWeight = 'bold';
+		var cell1 = row.insertCell(0).innerHTML = 'Id';
+		var cell2 = row.insertCell(1).innerHTML = 'Name';
+		var cell3 = row.insertCell(2).innerHTML = 'Date';
+		var cell4 = row.insertCell(3).innerHTML = 'Time';
+		var cell5 = row.insertCell(4).innerHTML = 'No';
+	</script>
 	<p id="demo"></p>
 
 <script>
@@ -63,20 +74,9 @@ a {
 		request.onload = function()
 		{
 			var obj = JSON.parse(this.response);
-			var table = document.createElement("table");
-
 			for(var i=0; i<obj.length; i++)
 			{
 				var row = table.insertRow(i);
-				if(i === 0)
-				{
-					row.style.fontWeight = 'bold';
-					var cel1 = row.insertCell(0).innerHTML = 'Event Id';
-					var cel2 = row.insertCell(1).innerHTML = 'Event Name';
-					var cel3 = row.insertCell(2).innerHTML = 'Event Date';
-					var cel4 = row.insertCell(3).innerHTML = 'Event Time';
-					var cel5 = row.insertCell(4).innerHTML = 'Maximum Number of Participants';
-				}
 				var cell1 = row.insertCell(0);
 				var cell2 = row.insertCell(1);
 				var cell3 = row.insertCell(2);
@@ -84,11 +84,11 @@ a {
 				var cell5 = row.insertCell(4);
 
 
-				cell1.innerHTML = obj[i+1].event_id;
-				cell2.innerHTML = obj[i+1].event_name;
-				cell3.innerHTML = obj[i+1].event_date;
-				cell4.innerHTML = obj[i+1].event_time;
-				cell5.innerHTML = obj[i+1].no_of_participants;
+				cell1.innerHTML = obj[i].event_id;
+				cell2.innerHTML = obj[i].event_name;
+				cell3.innerHTML = obj[i].event_date;
+				cell4.innerHTML = obj[i].event_time;
+				cell5.innerHTML = obj[i].no_of_participants;
 
 			}
 			document.getElementById('demo').appendChild(table);
