@@ -59,13 +59,23 @@ a {
 <script>
 	window.onload = function()
 	{
-		let text = '{"employees":[' +
-		'{"firstName":"John","lastName":"Doe" },' +
-		'{"firstName":"Anna","lastName":"Smith" },' +
-		'{"firstName":"Peter","lastName":"Jones" }]}';
-
+		var xhr = new XMLHttpRequest();
+		text = xhr.open('GET', 'https://microsrvs.herokuapp.com/listevent', true);
 		const obj = JSON.parse(text);
-		document.getElementById("demo").innerHTML = obj.employees[1].firstName + " " + obj.employees[1].lastName;
+		var table = document.createElement('table');
+		for(var i=0; i<obj.length; i++)
+		{
+			var row = table.insertRow(i);
+				var cell1 = row.insertCell(0).innerHTML;
+				var cell2 = row.insertCell(1).innerHTML;
+				var cell3 = row.insertCell(2).innerHTML;
+				var cell4 = row.insertCell(3).innerHTML;
+				var cell5 = row.insertCell(4).innerHTML;
+				var cell6 = row.insertCell(5).innerHTML;
+				var cell7 = row.insertCell(6).innerHTML;
+		}
+				
+		document.getElementById('demo').appendChild(table);
 	}
 </script>
 	
