@@ -53,18 +53,19 @@ a {
 		<button>Add Event</button>
 	</a>
 	<br><br>
-	<script>
-		window.onload = function()
-		{
-			var xhr = new XMLHttpRequest();
-			xhr.open('GET', 'https://microsrvs.herokuapp.com/listevent', true);
-			xhr.onload = function()
-			{
-				console.log(xhr.responseURL);
-			};
-			request.send();
-		}
-		</script>
-	<div id ='table_id'></div>
+	
+	<p id="demo"></p>
+
+<script>
+	
+	let text = '{"employees":[' +
+	'{"firstName":"John","lastName":"Doe" },' +
+	'{"firstName":"Anna","lastName":"Smith" },' +
+	'{"firstName":"Peter","lastName":"Jones" }]}';
+
+	const obj = JSON.parse(text);
+	document.getElementById("demo").innerHTML = obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+	
 </body>
 </html>
