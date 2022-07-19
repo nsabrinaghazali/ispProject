@@ -65,12 +65,13 @@ a {
 			var obj = JSON.parse(this.response);
 			var table = document.createElement("table");
 		
-			var row = table.insertRow();
+			
 			
 			
 			for(var i=0; i<obj.length; i++)
 			{
-				if(i==0)
+				var row = table.insertRow(i);
+				if(i===0)
 				{
 					row.style.fontWeight = 'bold';
 					var cell1 = row.insertCell(0).innerHTML = 'Event Id';
