@@ -34,7 +34,7 @@ input[type=text], input[type=number], select {
 	box-sizing: border-box;
 }
 
-button {
+input[type=submit],input[type=reset] {
 	width: 15%;
 	background-color: #CED6E0;;
 	padding: 14px 20px;
@@ -50,8 +50,7 @@ button {
 	<h1>EVENT MANAGEMENT SYSTEM</h1>
 	<h2>Edit Event</h2>
 	<hr>
-	<a href="ListEventController"><button>View Events</button></a>
-	<form action="AddEventController" method="post">
+	<form action="listEvent.jsp" method="post">
 		<label for="name">EVENT NAME</label><br> <input type="text"
 			id="name" name="name" placeholder="Event Name" required><br>
 		<br> <label for="type">EVENT TYPE</label><br> <select
@@ -62,7 +61,7 @@ button {
 		</select><br> <br> <label for="participant">NUMBER OF
 			PARTICIPANT</label><br> <input type="number" name="participant" required><br>
 		<br> <input type="hidden" name="id"
-			value="<c:out value="${e.id}"/>" /><br> <input type="submit"
+			value="<c:out value="${param.id}"/>" /><br> <input type="submit"
 			value="Submit">&nbsp; <input type="reset" value="Reset">
 
 	</form>

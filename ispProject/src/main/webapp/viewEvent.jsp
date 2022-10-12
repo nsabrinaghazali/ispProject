@@ -42,20 +42,19 @@ button {
 	<h1>EVENT MANAGEMENT SYSTEM</h1>
 	<h2>Event Details</h2>
 	<hr>
-	<a href="ListEventController">
-		<button>Back</button>
+	<a href="listEvent.jsp">
+		<button>View All Event</button>
 	</a>
 	<br>
 	<br>
 	<div>
-		ID:
-		<c:out value="${e.id}" />
-		<br> <br> EVENT NAME:
-		<c:out value="${e.name}" />
-		<br> <br> EVENT TYPE:
-		<c:out value="${e.type}" />
-		<br> <br> NO OF PARTICIPANT:
-		<c:out value="${e.participant}" />
+		ID: 101
+		<br> <br> 
+		EVENT NAME: COLOURING CONTEST
+		<br> <br> 
+		EVENT TYPE: COMPETITION
+		<br> <br> 
+		NO OF PARTICIPANT: 25
 		<br> <br>
 	</div>
 

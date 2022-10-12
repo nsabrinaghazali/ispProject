@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Inquiries List</title>
+<title>Event List</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 body {
@@ -61,16 +61,31 @@ a {
 			<th colspan="3">ACTION</th>
 		</tr>
 			<tr>
-				<td><c:out value="${param.id}" /></td>
-				<td><c:out value="${param.name}" /></td>
-				<td><c:out value="${param.type}" /></td>
-				<td><c:out value="${param.participant}" /></td>
-				<td><a class="btn btn-primary"
-					href="ViewEventController?id=<c:out value="${param.id}"/>">View</a></td>
-				<td><a class="btn btn-primary"
-					href="UpdateEventController?id=<c:out value="${param.id}"/>">Edit</a></td>
-				<td><button class="btn btn-danger"
-						id="<c:out value="${param.id}"/>" onclick="confirmation(this.id)">Delete</button></td>
+				<td> 101 </td>
+				<td>COLOURING CONTEST</td>
+				<td>COMPETITION</td>
+				<td>25</td>
+				<td><a href="viewEvent.jsp"><button class="btn btn-primary" >View</button></a></td>
+				<td><a href="updateEvent.jsp"><button class="btn btn-primary" >Edit</button></a></td>
+				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
+			</tr>
+			<tr>
+				<td> 102 </td>
+				<td> GOTONG ROYONG PERDANA </td>
+				<td> COMMUNITY SERVICE </td>
+				<td> 50 </td>
+				<td><button class="btn btn-primary" >View</button></td>
+				<td><a href="updateEvent.jsp"><button class="btn btn-primary" >Edit</button></a></td>
+				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
+			</tr>
+			<tr>
+				<td> 103 </td>
+				<td>HOW TO ATTAIN PEACEFUL MIND</td>
+				<td>LECTURE</td>
+				<td>32</td>
+				<td><button class="btn btn-primary" >View</button></td>
+				<td><a href="updateEvent.jsp"><button class="btn btn-primary" >Edit</button></a></td>
+				<td><button class="btn btn-danger" onclick="confirmation(id)">Delete</button></td>
 			</tr>
 	</table>
 	<script>
@@ -80,7 +95,7 @@ a {
 		var r = confirm("Are you sure you want to delete?");
 		if(r == true)
 			{
-			location.href = 'DeleteEventController?id=' + id;
+			location.href = 'listEvent2.jsp' + id;
 			alert("Event successfuly deleted");
 			}
 		else
